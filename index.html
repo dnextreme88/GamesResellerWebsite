@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game Over Shop - Home</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <style>
+    #cat {
+      line-height: 30px;
+      background-color: #eeeeee;
+      float: left;
+      padding: 5px;
+    }
+
+    #adSpace {
+      min-height: 360px;
+      background-color: #66BB6A; 
+      float: right;
+      padding: 5px;
+    }
+	
+	.img-responsive {
+	  height: 360px;
+	  width: 360px;
+	}
+	
+  	.fade-in {
+  	  -webkit-animation: fade-in 2s ease;
+  	  -moz-animation: fade-in ease-in-out 2s both;
+  	  -ms-animation: fade-in ease-in-out 2s both;
+  	  -o-animation: fade-in ease-in-out 2s both;
+  	  animation: fade-in 2s ease;
+  	  visibility: visible;
+  	  -webkit-backface-visibility: hidden;
+  	}
+
+  	@-webkit-keyframes fade-in{0%{opacity:0;} 100%{opacity:1;}}
+  	@-moz-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+  	@-o-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+  	@keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+        width: 50%;
+        margin: auto;
+    }
+	
+  </style>
+</head>
+<body>
+<!-- TO DO LIST
+  1: Search box on headers. [DONE - 6/30/16]
+  2: Carousel jumbotron. [DONE - 6/30/16. The lab doesn't seem to support JS though. FIXED on 7/7/16.]
+  3: Add pages for each of the categories. [DONE - 7/1/16 - only done on the index.html page (for now)]
+-->
+  <header class="container">
+    <div class="row"> <!-- LOGO, LOGIN & REGISTER BUTTONS, SEARCH BOX -->
+      <div class="col-sm-6">
+        <a href="index.html"><img src="logo.png" height="100%" width="100%" /></a>
+      </div>
+      <div class="col-sm-2">
+        <!-- EMPTY. USED AS A PLACEHOLDER FOR EXTRA SPACE -->
+      </div>
+      <div class="col-sm-4">
+        <a href="login.html"><button type="button" class="btn btn-default pull-left">LOG IN</button></a> <!-- UNUSED -->
+        <a href="register.html"><button type="button" class="btn btn-default pull-right">REGISTER</button></a> <!-- UNUSED -->
+        <form class="navbar-form" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Enter a search term">
+          </div>
+          <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span>Search</button>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <nav class="navbar navbar-inverse">
+          <ul class="nav navbar-nav list-inline text-uppercase">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
+      			<ul class="dropdown-menu">
+					<li><a href="cat_action.html">Action</a></li>
+					<li><a href="cat_adventure.html">Adventure</a></li>
+					<li><a href="cat_horror.html">Horror</a></li>
+					<li><a href="cat_rpg.html">RPG</a></li>
+					<li><a href="cat_simulation.html">Simulation</a></li>
+					<li><a href="cat_sports.html">Sports</a></li>
+					<li><a href="cat_strategy.html">Strategy</a></li>
+			      </ul>
+			</li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="tips.html">Tips and Tricks</a></li>
+			<li><a href="dashboard.html">User Dashboard</a></li>
+          </ul>
+        </nav> 
+      </div>
+    </div>
+  </header>
+
+	<section class="container">
+		<div class="row">
+		
+			<div id="cat" class="col-sm-2">
+				<nav>
+				  <p class="text-center text-uppercase">Gaming Categories</p>
+				  <ul class="list-unstyled">
+					<li><a href="cat_action.html">Action</a></li>
+					<li><a href="cat_adventure.html">Adventure</a></li>
+					<li><a href="cat_horror.html">Horror</a></li>
+					<li><a href="cat_rpg.html">RPG</a></li>
+					<li><a href="cat_simulation.html">Simulation</a></li>
+					<li><a href="cat_sports.html">Sports</a></li>
+					<li><a href="cat_strategy.html">Strategy</a></li>
+				  </ul>
+				</nav>
+			</div>
+			
+			<div class="col-sm-8 jumbotron">
+				<div class="container">
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+						<ol class="carousel-indicators">
+						  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						  <li data-target="#myCarousel" data-slide-to="1"></li>
+						  <li data-target="#myCarousel" data-slide-to="2"></li>
+						</ol>
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+						  <div class="item active">
+							<a href="index.html"><img src="img1.jpg" title="Homepage Banner" width="320" height="320"></a>
+						  </div>
+						  <div class="item">
+							<a href="promo.html"><img src="promo1.jpg" title="Promo Banner" width="320" height="320"></a>
+						  </div>
+						  <div class="item">
+							<a href="about.html"><img src="staffbg.png" title="Meet the Team Banner" width="320" height="320"></a>
+						  </div>
+						</div>
+
+						<!-- Left and right controls -->
+						<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+						  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						  <span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+						  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						  <span class="sr-only">Next</span>
+						</a>
+					</div>
+					<div class="row">
+					  <div class="col-sm-6 toTeal">
+						<h2 class="text-uppercase"><span class="glyphicon glyphicon-pushpin teal"></span>News</h2>
+						  <h3>June 21, 2016</h3>
+							<p>Initial conception.</p>
+						  <h3>June 25, 2016</h3>
+							<p>Added links to the social bar in the footers section to be images rather than text instead.</p>
+							<p>Created the "Tips and Tricks", "About", "Version History", "Archives" and "Sitemap" pages.</p>
+							<a href="vhistory.html"><button type="button" class="btn btn-default">Read More</button></a>
+					  </div>
+					  <div class="col-sm-6 toTeal">
+						<h2 class="text-uppercase"><span class="glyphicon glyphicon-blackboard teal"></span>Promos</h2>
+						  <h3 style="text-indent: 1em;">Independence Day promo!</h3>
+							<p>This June 12, 2016, celebrate our nation's Independence Day! Game Over Shop joins in the festivities and we have an awesome promo for you! Read more below.</p>
+							<a href="promo.html"><button type="button" class="btn btn-default">Read More</button></a>
+					  </div>
+					</div>
+					<div class="row toTeal"> <!-- APPLIES TO THE WHOLE NEW ADS SECTION -->
+					  <div class="col-sm-12">
+						<h2 class="text-uppercase"><span class="glyphicon glyphicon-list-alt teal"></span>New Ads</h2>
+						  <div class="row">
+							<figure class="thumbnail col-sm-4">
+							  <h4 class="text-center text-uppercase">Ad #1</h4>
+							  <img src="images/horror4.jpg" class="img-responsive" />
+							</figure>
+							<figure class="thumbnail col-sm-4">
+							  <h4 class="text-center text-uppercase">Ad #2</h4>
+							  <img src="images/rpg4.jpg" class="img-responsive" />
+							</figure>
+							<figure class="thumbnail col-sm-4">
+							  <h4 class="text-center text-uppercase">Ad #3</h4>
+							  <img src="images/rpg5.jpg" class="img-responsive" />
+							</figure>
+						  </div>
+					  </div>
+					  <div class="col-sm-12">
+						<h2 class="text-uppercase"></h2>
+						  <div class="row">
+							<figure class="thumbnail col-sm-4">
+							  <h4 class="text-center text-uppercase">Ad #4</h4>
+							  <img src="images/simulation6.png" class="img-responsive" />
+							</figure>
+							<figure class="thumbnail col-sm-4">
+							  <h4 class="text-center text-uppercase">Ad #5</h4>
+							  <img src="images/strategy9.jpg" class="img-responsive" />
+							</figure>
+							<figure class="thumbnail col-sm-4">
+							  <h4 class="text-center text-uppercase">Ad #6</h4>
+							  <img src="images/strategy10.jpg" class="img-responsive" />
+							</figure>
+						  </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+
+			<div id="adSpace" class="col-sm-2">
+				<p>Ad Space</p>
+				<div id="ads"></div>
+				<!-- If JS is not enabled on the browser -->
+				<noscript>
+					<img class="img-responsive" src="images/rpg1.jpg" />
+				</noscript>
+			</div>
+
+		</div>
+	</section>
+
+  <footer class="container">
+    <div class="row">
+      <ul class="col-sm-3 list-unstyled">
+        <li><a href="about.html">About</a></li>
+        <li><a href="archives.html">Archives</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+      </ul>
+      <ul class="col-sm-3 list-unstyled">
+        <li><a href="privacy.html">Privacy Policy</a></li> <!-- not in doc -->
+        <li><a href="tos.html">Terms of Use</a></li>
+      </ul>
+      <ul class="col-sm-6 list-unstyled">
+        <p>Copyright &copy; Game Over Shop 2016.</p>
+        <p>All rights reserved.</p>
+        <li>
+          <ul class="list-inline"> 
+            <li><img src="facebook.png" class="social" alt="Like our page @ Game Over Shop PH" title="Like our page @ Game Over Shop PH"/></li>
+            <li><img src="twitter.png" class="social" alt="Follow us @ GameOverPH" title="Follow us @ GameOverPH"/></li>
+            <li><img src="youtube.png" class="social" alt="Subscribe to our YT Channel: Game Over PH" title="Subscribe to our YT Channel: Game Over PH"/></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!-- SCRIPT LISTS -->
+	<!-- Adds random images on Ad Space area on load. Completed on 7/1/16. Credits: https://gist.github.com/stephenscaff/8266351 -->
+	<script type='text/javascript' src='js/jquery.min.js'></script>
+	<script>
+	//Add your images, we'll set the path in the next step
+		var images = ['action1.jpg', 'adventure1.jpg', 'horror1.jpg', 'rpg1.jpg', 'simulation1.jpg', 'sports1.png', 'strategy1.jpg'];
+		
+	//Build the img, then do a bit of maths to randomize load and append to a div. Add a touch off css to fade them badboys in all sexy like.
+		$('<img class="fade-in img-responsive" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#ads');
+	</script>
+  <!-- END SCRIPT LISTS -->
+</body>
+</html>

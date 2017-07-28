@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game Over Shop - User Ads</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <style>
+	.ad {
+		width: 250px;
+		height: 250px;
+	}
+		
+	#dashMenu {
+		position: fixed;
+	}
+  </style>
+</head>
+<body>
+
+  <header class="container">
+    <div class="row"> <!-- LOGO, LOGIN & REGISTER BUTTONS, SEARCH BOX -->
+      <div class="col-sm-6">
+        <a href="index.html"><img src="logo.png" height="100%" width="100%" /></a>
+      </div>
+      <div class="col-sm-2">
+        <!-- EMPTY. USED AS A PLACEHOLDER FOR EXTRA SPACE -->
+      </div>
+      <div class="col-sm-4">
+        <a href="login.html"><button type="button" class="btn btn-default pull-left">LOG IN</button></a> <!-- UNUSED -->
+        <a href="register.html"><button type="button" class="btn btn-default pull-right">REGISTER</button></a> <!-- UNUSED -->
+        <form class="navbar-form" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Enter a search term">
+          </div>
+          <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span>Search</button>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <nav class="navbar navbar-inverse">
+          <ul class="nav navbar-nav list-inline text-uppercase">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
+      			<ul class="dropdown-menu">
+					<li><a href="cat_action.html">Action</a></li>
+					<li><a href="cat_adventure.html">Adventure</a></li>
+					<li><a href="cat_horror.html">Horror</a></li>
+					<li><a href="cat_rpg.html">RPG</a></li>
+					<li><a href="cat_simulation.html">Simulation</a></li>
+					<li><a href="cat_sports.html">Sports</a></li>
+					<li><a href="cat_strategy.html">Strategy</a></li>
+			      </ul>
+			</li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="tips.html">Tips and Tricks</a></li>
+			<li class="active"><a href="dashboard.html">User Dashboard</a></li>
+          </ul>
+        </nav> 
+      </div>
+    </div>
+  </header>
+
+  <section class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <nav id="dashMenu" class="navbar navbar-inverse">
+          <h2>Dashboard Menu</h2>
+          <ul class="nav navbar list-unstyled text-uppercase">
+            <li class="active"><a href="user_ads.html">Ads</a></li>
+            <li><a href="user_profile.html">Profile</a></li>
+			<li><a href="user_inbox.html">Inbox</a></li>
+			<li><a href="user_stats.html">Stats</a></li>
+          </ul>
+        </nav> 
+      </div>
+      <div id="contentArea" class="col-sm-9"> <!-- USE BOOTSTRAP TABS HERE INSTEAD OF NAVBAR -->
+		<nav class="navbar navbar-inverse">
+			<ul class="nav navbar-nav list-unstyled list-inline text-uppercase">
+				<li class="active"><a href="user_ads.html">Active Ads</a></li>
+				<li><a href="user_pending_ads.html">Pending Ads</a></li>
+				<li><a href="user_sold_ads.html">Sold Ads</a></li>
+			</ul>
+		</nav>
+		<div class="row">
+			<p>Manage your ads here.</p>
+			<table class="table table-bordered">
+				<tr>
+					<td width="20%">#1</td>
+					<td width="*" colspan="2" class="text-center text-uppercase">ad #1</td>
+				</tr>
+				<tr>
+					<td rowspan="3"><img src="images/action1.jpg" class="img-circle ad" /></td>
+					<td>
+						<table class="table table-bordered">
+							<tr>
+								<td>Date Posted:</td>
+								<td>Messages:</td>
+							</tr>
+							<tr>
+								<td>Price:</td>
+								<td>Shipping?:</td>
+							</tr>
+							<tr>
+								<td>Hits:</td>
+								<td> </td>
+							</tr>
+							<tr>
+								<td><a href="user_edit_ad.html"><button type="button" class="btn btn-default pull-left">EDIT AD</button></a></td> <!-- UNUSED -->
+								<td><a href="user_marksold_ad.html"><button type="button" class="btn btn-default pull-right">MARK AS SOLD</button></a></td> <!-- UNUSED -->
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table class="table table-bordered">
+				<tr>
+					<td width="20%">#2</td>
+					<td width="*" colspan="2" class="text-center text-uppercase">ad #2</td>
+				</tr>
+				<tr>
+					<td rowspan="3"><img src="images/rpg1.jpg" class="img-circle ad" /></td>
+					<td>
+						<table class="table table-bordered">
+							<tr>
+								<td>Date Posted:</td>
+								<td>Messages:</td>
+							</tr>
+							<tr>
+								<td>Price:</td>
+								<td>Shipping?:</td>
+							</tr>
+							<tr>
+								<td>Hits:</td>
+								<td> </td>
+							</tr>
+							<tr>
+								<td><a href="user_edit_ad.html"><button type="button" class="btn btn-default pull-left">EDIT AD</button></a></td> <!-- UNUSED -->
+								<td><a href="user_marksold_ad.html"><button type="button" class="btn btn-default pull-right">MARK AS SOLD</button></a></td> <!-- UNUSED -->
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table class="table table-bordered">
+				<tr>
+					<td width="20%">#3</td>
+					<td width="*" colspan="2" class="text-center text-uppercase">ad #2</td>
+				</tr>
+				<tr>
+					<td rowspan="3"><img src="images/rpg2.jpg" class="img-circle ad" /></td>
+					<td>
+						<table class="table table-bordered">
+							<tr>
+								<td>Date Posted:</td>
+								<td>Messages:</td>
+							</tr>
+							<tr>
+								<td>Price:</td>
+								<td>Shipping?:</td>
+							</tr>
+							<tr>
+								<td>Hits:</td>
+								<td> </td>
+							</tr>
+							<tr>
+								<td><a href="user_edit_ad.html"><button type="button" class="btn btn-default pull-left">EDIT AD</button></a></td> <!-- UNUSED -->
+								<td><a href="user_marksold_ad.html"><button type="button" class="btn btn-default pull-right">MARK AS SOLD</button></a></td> <!-- UNUSED -->
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table class="table table-bordered">
+				<tr>
+					<td width="20%">#4</td>
+					<td width="*" colspan="2" class="text-center text-uppercase">ad #2</td>
+				</tr>
+				<tr>
+					<td rowspan="3"><img src="images/adventure1.jpg" class="img-circle ad" /></td>
+					<td>
+						<table class="table table-bordered">
+							<tr>
+								<td>Date Posted:</td>
+								<td>Messages:</td>
+							</tr>
+							<tr>
+								<td>Price:</td>
+								<td>Shipping?:</td>
+							</tr>
+							<tr>
+								<td>Hits:</td>
+								<td> </td>
+							</tr>
+							<tr>
+								<td><a href="user_edit_ad.html"><button type="button" class="btn btn-default pull-left">EDIT AD</button></a></td> <!-- UNUSED -->
+								<td><a href="user_marksold_ad.html"><button type="button" class="btn btn-default pull-right">MARK AS SOLD</button></a></td> <!-- UNUSED -->
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table class="table table-bordered">
+				<tr>
+					<td width="20%">#5</td>
+					<td width="*" colspan="2" class="text-center text-uppercase">ad #2</td>
+				</tr>
+				<tr>
+					<td rowspan="3"><img src="images/horror1.jpg" class="img-circle ad" /></td>
+					<td>
+						<table class="table table-bordered">
+							<tr>
+								<td>Date Posted:</td>
+								<td>Messages:</td>
+							</tr>
+							<tr>
+								<td>Price:</td>
+								<td>Shipping?:</td>
+							</tr>
+							<tr>
+								<td>Hits:</td>
+								<td> </td>
+							</tr>
+							<tr>
+								<td><a href="user_edit_ad.html"><button type="button" class="btn btn-default pull-left">EDIT AD</button></a></td> <!-- UNUSED -->
+								<td><a href="user_marksold_ad.html"><button type="button" class="btn btn-default pull-right">MARK AS SOLD</button></a></td> <!-- UNUSED -->
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="container">
+    <div class="row">
+      <ul class="col-sm-3 list-unstyled">
+        <li><a href="about.html">About</a></li>
+        <li><a href="archives.html">Archives</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+      </ul>
+      <ul class="col-sm-3 list-unstyled">
+        <li><a href="privacy.html">Privacy Policy</a></li> <!-- not in doc -->
+        <li><a href="tos.html">Terms of Use</a></li>
+      </ul>
+      <ul class="col-sm-6 list-unstyled">
+        <p>Copyright &copy; Game Over Shop 2016.</p>
+        <p>All rights reserved.</p>
+        <li>
+          <ul class="list-inline"> 
+            <li><img src="facebook.png" class="social" alt="Like our page @ Game Over Shop PH" title="Like our page @ Game Over Shop PH"/></li>
+            <li><img src="twitter.png" class="social" alt="Follow us @ GameOverPH" title="Follow us @ GameOverPH"/></li>
+            <li><img src="youtube.png" class="social" alt="Subscribe to our YT Channel: Game Over PH" title="Subscribe to our YT Channel: Game Over PH"/></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!-- SCRIPT LISTS -->
+
+  <!-- END SCRIPT LISTS -->
+</body>
+</html>

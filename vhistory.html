@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game Over Shop - Version History</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <style>
+
+  </style>
+</head>
+<body>
+
+  <header class="container">
+    <div class="row"> <!-- LOGO, LOGIN & REGISTER BUTTONS, SEARCH BOX -->
+      <div class="col-sm-6">
+        <a href="index.html"><img src="logo.png" height="100%" width="100%" /></a>
+      </div>
+      <div class="col-sm-2">
+        <!-- EMPTY. USED AS A PLACEHOLDER FOR EXTRA SPACE -->
+      </div>
+      <div class="col-sm-4">
+        <a href="login.html"><button type="button" class="btn btn-default pull-left">LOG IN</button></a> <!-- UNUSED -->
+        <a href="register.html"><button type="button" class="btn btn-default pull-right">REGISTER</button></a> <!-- UNUSED -->
+        <form class="navbar-form" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Enter a search term">
+          </div>
+          <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span>Search</button>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <nav class="navbar navbar-inverse">
+          <ul class="nav navbar-nav list-inline text-uppercase">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
+      			<ul class="dropdown-menu">
+					<li><a href="cat_action.html">Action</a></li>
+					<li><a href="cat_adventure.html">Adventure</a></li>
+					<li><a href="cat_horror.html">Horror</a></li>
+					<li><a href="cat_rpg.html">RPG</a></li>
+					<li><a href="cat_simulation.html">Simulation</a></li>
+					<li><a href="cat_sports.html">Sports</a></li>
+					<li><a href="cat_strategy.html">Strategy</a></li>
+			      </ul>
+			</li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="tips.html">Tips and Tricks</a></li>
+          </ul>
+        </nav> 
+      </div>
+    </div>
+  </header>
+
+  <section class="container">
+    <div class="row">
+      <h1>Developmental News</h1>
+		  <p>June 21, 2016</p>
+			<ul>
+				<li>Initial conception.</li>
+			</ul>
+		  <p>June 25, 2016</p>
+			<ul>
+				<li>Added links to the social bar in the footers section to be images rather than text instead.</li>
+				<li>Created the "Tips and Tricks", "About", "Version History", "Archives" and "Sitemap" pages.</li>
+				<li>Added content in "About" and "Archives" pages.</li>
+				<li>The "Version History" page is accessible through the "Archives" page.</li>
+			</ul>
+		  <p>June 28, 2016</p>
+			<ul>
+				<li>Added content in "Tips and Tricks" and "About" pages.</li>
+			</ul>
+		  <p>June 30, 2016</p>
+			<ul>
+				<li>Added the logo. Added a link that would go back to the homepage.</li>
+				<li>Added a searchbox on all pages. A corresponding icon is included as well (although the search isn't functional yet).</li>
+				<li>Added an "Ad space" section on "Index" page.</li>
+			</ul>
+		  <p>July 1, 2016</p>
+			<ul>
+				<li>Added a random image script on the Ad Space area of "Index" page.</li>
+				<li>Changed the order of the categories in "Index" page not being organized alphabetically.</li>
+				<li>Added a dropdown menu for the "Categories" link in the navbar.</li>
+				<li>Fixed the active link of "Tips & Tricks" page not pointing correctly to the page (it was pointed to "Home").</li>
+			</ul>
+		  <p>July 2, 2016</p>
+			<ul>
+				<li>Added our staff pictures in "About" page.</li>
+				<li>Created the category "Action" page (this is currently used for testing purposes).</li>
+			</ul>
+		  <p>July 7, 2016</p>
+			<ul>
+				<li>Fixed all pages not loading JS functions properly.</li>
+				<li>Added a jumbotron on the "Index" page. Added sub-headings too.</li>
+			</ul>
+		  <p>July 26, 2016</p>
+			<ul>
+				<li>Added a "Guidelines for selling items" section in "Tips & Tricks" page.</li>
+				<li>Created a sample "User Dashboard" page along with its subpage "User Ads" (contains sub-subpages: Active Ads, Pending Ads and Sold Ads).</li>
+				<li>Started adding ads in the category "Action" page.</li>
+				<li>Added an "About" section in the page of the same name.</li>
+				<li>Modified the "Mission" section in "About" page.</li>
+				<li>Added staff descriptions in "Meet the Team" section in "About" page.</li>
+				<li>Added a "Credits" section in "Archives" page.</li>
+			</ul>
+		  <p>July 27, 2016</p>
+			<ul>
+				<li>Fixed all section containers (Ad Space, Categories and the Jumbotron) in "Index" page to align exactly with the header and footer areas. They were not of the same width.</li>
+				<li>Added all the other gaming categories (aside from Action):  Adventure, Horror, RPG, Simulation, Sports, Strategy.</li>
+				<li>Added buttons on the "Promo" and "News" section of "Index" page that would link to "Promos" and "Developmental News" pages respectively.</li>
+				<li>Added recent ads on the "New Ads" section of "Index" page.</li>
+				<li>Changed all changelog items (on this page) into list items instead of being paragraph elements.</li>
+				<li>Added "FAQ", "Contact Us" and "Promo" pages.</li>
+				<li>Added some glyphicons on each section in "Tips & Tricks" page and on each section in "Index" page.</li>
+				<li>Added a default image on the "Ad Space" section in "Index" page (only if JS is not enabled on the browser).</li>
+			</ul>
+		  <p>July 29, 2016</p>
+			<ul>
+				<li>Re-arranged the sections in "Index" page.</li>
+				<li>Added "Privacy Policy" page.</li>
+				<li>The "About" page is accessible through the "Contact Us" page. Click on the image to redirect you there.</li>
+				<li>Added more FAQ questions in the page of the same name.</li>
+			</ul>
+		  <p>August 2, 2016</p>
+			<ul>
+				<li>Added a fixed background image.</li>
+				<li>Added "Terms of Use" page.</li>
+				<li>Added borders on sold ads as well as fixing their image dimensions.</li>
+				<li>All paragraph elements are now indented by 0.5cm.</li>
+				<li>Added a missing header in "Sitemap" page.</li>
+				<li>Fixed broken social links at the footers area.</li>
+			</ul>
+    </div>
+  </section>
+
+  <footer class="container">
+    <div class="row">
+      <ul class="col-sm-3 list-unstyled">
+        <li><a href="about.html">About</a></li>
+        <li><a href="archives.html">Archives</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+      </ul>
+      <ul class="col-sm-3 list-unstyled">
+        <li><a href="privacy.html">Privacy Policy</a></li> <!-- not in doc -->
+        <li><a href="tos.html">Terms of Use</a></li>
+      </ul>
+      <ul class="col-sm-6 list-unstyled">
+        <p>Copyright &copy; Game Over Shop 2016.</p>
+        <p>All rights reserved.</p>
+        <li>
+          <ul class="list-inline"> 
+            <li><img src="facebook.png" class="social" alt="Like our page @ Game Over Shop PH" title="Like our page @ Game Over Shop PH"/></li>
+            <li><img src="twitter.png" class="social" alt="Follow us @ GameOverPH" title="Follow us @ GameOverPH"/></li>
+            <li><img src="youtube.png" class="social" alt="Subscribe to our YT Channel: Game Over PH" title="Subscribe to our YT Channel: Game Over PH"/></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!-- SCRIPT LISTS -->
+
+  <!-- END SCRIPT LISTS -->
+</body>
+</html>

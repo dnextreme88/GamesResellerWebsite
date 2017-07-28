@@ -1,0 +1,67 @@
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+body {
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+section {
+  background-color: white;
+}
+
+p {
+  text-indent: 0.5cm;
+}
+
+tr.price td:nth-child(even)::before {
+  content: "\0020B1    "; /* inserts a peso sign*/
+  font-weight: bold;
+  font-size: 14px;
+}
+
+footer {
+  background-color: #444;
+  color:white;
+  clear:both;
+  text-align:center;
+  padding:5px;
+}
+
+/* TRANSITIONS */
+
+.toTeal {
+	transition: all 0.3s linear;
+}
+
+.toTeal:hover {
+	background-color: #4DB6AC; /* lighter teal */
+}
+
+/* BUTTONS */
+
+.btn.btn-default {
+  border: 2px solid #009688; /* teal */
+  font-family: "Open Sans", Helvetica, sans-serif;
+  background-color: #009688;
+  text-transform: uppercase;
+  color: white;
+  transition: all 0.3s linear;
+}
+	.btn.btn-default:hover {
+		background-color: #4CAF50; /* green */
+	}
+
+img.social {
+  width: 32px;
+  height: 32px;
+}
+
+.teal {
+  color: #009688;
+}
